@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10;
+}
+
+/* Style de l'en-tête */
+header {
+    display: flex;
+    justify-content: space-between; /* Sépare le logo des liens */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    padding: 100px 10px; /* Espace autour de l'en-tête */
+    background-color: #00025e; /* Couleur de fond de l'en-tête */
+    color: rgb(223, 84, 84);
+    text-align: center;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 100%; /* Ajuste la taille du logo sans le déformer */
+    height: auto;
+    border-radius: 10%;
+    margin-left: 40%;
+}
+
+nav ul {
+    list-style-type: none; /* Retirer les puces */
+    display: flex; /* Alignement des éléments de la liste en ligne */
+    justify-content: center; /* Centre les éléments de la liste */
+    gap: 300px; /* Espace entre les liens */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 50px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #090202; /* Changer la couleur au survol */
+    background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
+    border-radius: 10px; /* Arrondi les bords au survol */
+}
+.visio img{
+    object-fit: cover; /*permet de garder limage au bonne dimension*/
+    width: 6200px; 
+        margin-top: 0%;
+        display: flex;
+        justify-content: center;  /* Centre l'image horizontalement */
+        align-items: center;  /* Centre l'image verticalement */
+        height: 1000px;  /* Ajuste la hauteur de la bannière selon tes besoins */
+    }
+.present img {
+        object-fit: cover; 
+        width: 6200px;   
+        height: 1000px;
+        object-fit: cover; 
+        margin-top: 100px;
+       
+    
+}
+div h1{
+    position: absolute;
+    margin-top: 11%;
+    margin-left: 20%;
+    justify-content: center;
+    padding: 0;
+    margin: 50;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #7300ff;
+}
+.item img{
+    width: 40%;
+    margin: 5% 4.5%;
+    align-items: center;
+    animation: fadeIn 5s ease-in-out;
+    }
+h1{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 45%;
+    margin-bottom: 10%;
+    justify-content: center;
+    padding: 50;
+    margin: 50;
+    text-align: center;
+    font-family:'Arial', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    font-size: 100px;
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+   
+}
+
+   
+        
+ 
+    
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes bloc {
+    from {
+        right: 0;
+    }
+    to {
+        right: 80%;
+    }
+}
+
+

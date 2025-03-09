@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10;
+}
+
+/* Style de l'en-tête */
+header {
+    display: flex;
+    justify-content: space-between; /* Sépare le logo des liens */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    padding: 100px 10px; /* Espace autour de l'en-tête */
+    background-color: #00025e; /* Couleur de fond de l'en-tête */
+    color: rgb(32, 22, 226);
+    text-align: center;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 100%; /* Ajuste la taille du logo sans le déformer */
+    height: auto;
+    border-radius: 10%;
+    margin-left: 40%;
+}
+
+nav ul {
+    list-style-type: none; /* Retirer les puces */
+    display: flex; /* Alignement des éléments de la liste en ligne */
+    justify-content: center; /* Centre les éléments de la liste */
+    gap: 300px; /* Espace entre les liens */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 50px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #090202; /* Changer la couleur au survol */
+    background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
+    border-radius: 10px; /* Arrondi les bords au survol */
+}
+
+.image_back img {
+   width: 100%;
+   height: 100vh;
+   background-position: center;
+   background-repeat: no repeat;
+   object-fit: cover; /*permet de garder limage au bonne dimension*/
+
+}
+.cours h1{
+
+    font-family: Arial, sans-serif;
+    margin-left: 20 %;
+    padding: 10;
+    width: 40000px;
+}

@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(174, 221, 237);
+}
+
+.head {
+    color: rgb(244, 50, 50);
+    font-size: 30px;
+}
+
+.body {
+    font-family:'Courier New', monospace;
+}
+
+
+nav img {
+    border-radius: 15px;
+    overflow: scroll ;
+    position: fixed;
+    height: 30px;
+    width: 150px
+    display: block;
+    margin-bottom: 100px;
+    margin-left: 1px;
+  }
+  
+  nav span {
+    margin: 50px 100px;
+
+  }
+  
+  nav a {
+    color: #280be7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Taille par défaut pour les grands écrans */
+h1 {
+    font-size: 3rem;
+}
+
+/* Taille pour les écrans plus petits (moins de 768px) */
+@media (max-width: 768px) {
+    nav {
+        font-size: 2rem;
+    }
+}
+
+/* Taille pour les très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+

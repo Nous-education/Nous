@@ -17,7 +17,7 @@ header {
 }
 
 .logo img {
-    max-width: 100%; /* Ajuste la taille du logo sans le déformer */
+    max-width: 50%; /* Ajuste la taille du logo sans le déformer */
     height: auto;
     border-radius: 10%;
     margin-left: 40%;
@@ -29,7 +29,7 @@ nav ul {
     justify-content: center; /* Centre les éléments de la liste */
     gap: 10rem; /* Espace entre les liens */
     padding: 0;
-    right-margin: 5%;
+    margin: 0;
     text-align: center;
 
 }

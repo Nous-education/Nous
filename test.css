@@ -29,7 +29,7 @@ nav ul {
     justify-content: center; /* Centre les éléments de la liste */
     gap: 10rem; /* Espace entre les liens */
     padding: 0;
-    margin: 0;
+    right-margin: 5%;
     text-align: center;
 
 }

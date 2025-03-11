@@ -8,7 +8,8 @@ body {
 header {
     display: flex;
     justify-content: space-between; /* Sépare le logo des liens */
-    align-items: center; /* Aligne les éléments verticalement au centre */
+    align-items: center; /*
+    Aligne les éléments verticalement au centre */
     padding: 100px 10px; /* Espace autour de l'en-tête */
     background-color: #00025e; /* Couleur de fond de l'en-tête */
     color: rgb(32, 22, 226);
@@ -31,6 +32,8 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
+    left-margin: 5% ;
+    
 
 }
 

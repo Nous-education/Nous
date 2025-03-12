@@ -55,17 +55,17 @@ nav a:hover {
 }
 .visio img{
     object-fit: cover; /*permet de garder limage au bonne dimension*/
-    width: 6200px; 
+    width: 387.50rem; 
         margin-top: 0%;
         display: flex;
         justify-content: center;  /* Centre l'image horizontalement */
         align-items: center;  /* Centre l'image verticalement */
-        height: 1000px;  /* Ajuste la hauteur de la bannière selon tes besoins */
+        height: 62.5rem;  /* Ajuste la hauteur de la bannière selon tes besoins */
     }
 .present img {
         object-fit: cover; 
-        width: 6200px;   
-        height: 1000px;
+        width:    100%;   
+        height: 20% ;
         object-fit: cover; 
         margin-top: 100px;
        

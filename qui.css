@@ -72,7 +72,7 @@ nav a:hover {
     object-fit: contain; /* Affiche toute l'image sans la couper */
     flex-shrink: 0;
 }
-.carousel:hover {
+.carousel-images:hover {
   animation-play-state: paused;
 }
 

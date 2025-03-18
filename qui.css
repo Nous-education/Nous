@@ -66,11 +66,14 @@ nav a:hover {
     width: calc(100vw * 12); /* 100% par image x 3 */
     animation: slide 30s infinite linear;
 }
-    .carousel-images img {
+.carousel-images img {
     width: 100vw;
     height: 80vh;
     object-fit: contain; /* Affiche toute l'image sans la couper */
     flex-shrink: 0;
+}
+.carousel:hover {
+  animation-play-state: paused;
 }
 
 @keyframes slide {

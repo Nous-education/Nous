@@ -1,9 +1,4 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Style global */
 body {
@@ -41,7 +36,7 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
-    margin-left: 5%; /* Correction de left-margin */
+   
 }
 
 nav a {
@@ -66,13 +61,6 @@ nav a:hover {
    object-fit: cover; /* Permet de garder l'image aux bonnes dimensions */
 }
 
-/* Section cours */
-.cours h1 {
-    font-family: Arial, sans-serif;
-    margin-left: 20%;
-    padding: 10px;
-    max-width: 100%; /* Correction de width */
-}
 
 /* ADAPTATION POUR MOBILE */
 @media (max-width: 768px) {

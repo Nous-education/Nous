@@ -69,3 +69,31 @@ nav a:hover {
     margin-left: 20 %;
     padding: 10;
     width: 40000px;
+
+    @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 10px; /* Réduit l’espace */
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 100px; /* Réduction du logo */
+        margin: auto;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical */
+        gap: 10px; /* Moins d’espace entre les liens */
+    }
+
+    .image_back img {
+        width: 100%;
+        height: auto; /* Évite le dépassement */
+    }
+
+    .cours h1 {
+        margin-left: 0;
+        text-align: center; /* Centre le texte */
+    }
+}

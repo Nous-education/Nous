@@ -1,19 +1,22 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Style global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 10;
+    padding: 10px;
 }
 
 /* Style de l'en-tête */
 header {
     display: flex;
     justify-content: space-between; /* Sépare le logo des liens */
-    align-items: center; /*
-    Aligne les éléments verticalement au centre */
+    align-items: center; /* Aligne les éléments verticalement au centre */
     padding: 100px 10px; /* Espace autour de l'en-tête */
     background-color: #00025e; /* Couleur de fond de l'en-tête */
     color: rgb(32, 22, 226);
@@ -21,6 +24,7 @@ header {
     width: 100%;
 }
 
+/* Logo */
 .logo img {
     max-width: 50%; /* Ajuste la taille du logo sans le déformer */
     height: auto;
@@ -28,6 +32,7 @@ header {
     margin-left: 40%;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none; /* Retirer les puces */
     display: flex; /* Alignement des éléments de la liste en ligne */
@@ -36,9 +41,7 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
-    left-margin: 5% ;
-    
-
+    margin-left: 5%; /* Correction de left-margin */
 }
 
 nav a {
@@ -54,23 +57,25 @@ nav a:hover {
     border-radius: 10px; /* Arrondi les bords au survol */
 }
 
-
+/* Image de fond */
 .image_back img {
    width: 100%;
-   height: 100%;
+   height: auto;
    background-position: center;
-   background-repeat: no repeat;
-   object-fit: cover; /*permet de garder limage au bonne dimension*/
-
+   background-repeat: no-repeat;
+   object-fit: cover; /* Permet de garder l'image aux bonnes dimensions */
 }
-.cours h1{
 
+/* Section cours */
+.cours h1 {
     font-family: Arial, sans-serif;
-    margin-left: 20 %;
-    padding: 10;
-    width: 40000px;
+    margin-left: 20%;
+    padding: 10px;
+    max-width: 100%; /* Correction de width */
+}
 
-    @media (max-width: 768px) {
+/* ADAPTATION POUR MOBILE */
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         padding: 20px 10px; /* Réduit l’espace */
@@ -97,3 +102,4 @@ nav a:hover {
         text-align: center; /* Centre le texte */
     }
 }
+

@@ -1,17 +1,18 @@
 
 
-/* Style global */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    pading: 0;
+    padding: 10;
 }
 
 /* Style de l'en-tête */
 header {
     display: flex;
     justify-content: space-between; /* Sépare le logo des liens */
-    align-items: center; /* Aligne les éléments verticalement au centre */
+    align-items: center; /*
+    Aligne les éléments verticalement au centre */
     padding: 100px 10px; /* Espace autour de l'en-tête */
     background-color: #00025e; /* Couleur de fond de l'en-tête */
     color: rgb(32, 22, 226);
@@ -19,7 +20,6 @@ header {
     width: 100%;
 }
 
-/* Logo */
 .logo img {
     max-width: 50%; /* Ajuste la taille du logo sans le déformer */
     height: auto;
@@ -27,7 +27,6 @@ header {
     margin-left: 40%;
 }
 
-/* Navigation */
 nav ul {
     list-style-type: none; /* Retirer les puces */
     display: flex; /* Alignement des éléments de la liste en ligne */
@@ -36,7 +35,9 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
-   
+    left-margin: 5% ;
+    
+
 }
 
 nav a {
@@ -50,7 +51,7 @@ nav a:hover {
     color: #090202; /* Changer la couleur au survol */
     background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
     border-radius: 10px; /* Arrondi les bords au survol */
-}
+} 
 
 /* Image de fond */
 .image_back img {

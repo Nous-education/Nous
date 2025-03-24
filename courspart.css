@@ -148,7 +148,7 @@ footer {
         gap: 10px; /* Moins d’espace entre les liens */
     }
     .item img{
-    width: 80%;
+    width: 100%;
     margin: 5% 4.5%;
     align-items: center;
     animation: fadeIn 5s ease-in-out;

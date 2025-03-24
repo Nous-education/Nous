@@ -131,4 +131,21 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 10px; /* Réduit l’espace */
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 100px; /* Réduction du logo */
+        margin: auto;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical */
+        gap: 10px; /* Moins d’espace entre les liens */
+    }
+
 

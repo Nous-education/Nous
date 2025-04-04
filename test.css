@@ -82,6 +82,7 @@ nav a:hover {
     }
 
     .image_back img {
+        display: none ;
         width: 100%;
         height: auto; /* Évite le dépassement */
     }

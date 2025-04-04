@@ -61,7 +61,9 @@ nav a:hover {
    background-repeat: no-repeat;
    object-fit: cover; /* Permet de garder l'image aux bonnes dimensions */
 }
-
+.image_back_phone img{
+    display : none;
+}
 
 /* ADAPTATION POUR MOBILE */
 @media (max-width: 768px) {
@@ -86,6 +88,11 @@ nav a:hover {
         width: 100%;
         height: auto; /* Évite le dépassement */
     }
+    .image_back_phone img{
+    display : center;
+     width: 100%;
+     height: auto;
+}
 
     .cours h1 {
         margin-left: 0;

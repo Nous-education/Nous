@@ -60,10 +60,7 @@ nav a:hover {
    background-position: center;
    background-repeat: no-repeat;
    object-fit: cover; /* Permet de garder l'image aux bonnes dimensions */
-}
-.image_phone img{
-    display : none;
-}
+
 
 /* ADAPTATION POUR MOBILE */
 @media (max-width: 768px) {
@@ -100,5 +97,10 @@ nav a:hover {
         margin-left: 0;
         text-align: center; /* Centre le texte */
     }
+}
+
+@media (min-width: 800px)
+.image_phone img {
+    display : none;
 }
 

@@ -1,14 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 10;
+    padding: 10px;
 }
 
 /* Style de l'en-tête */
 header {
     display: flex;
     justify-content: space-between; /* Sépare le logo des liens */
-    align-items: center; /*
-    Aligne les éléments verticalement au centre */
+    align-items: center; /* Aligne les éléments verticalement au centre */
     padding: 100px 10px; /* Espace autour de l'en-tête */
     background-color: #00025e; /* Couleur de fond de l'en-tête */
     color: rgb(32, 22, 226);
@@ -31,11 +30,9 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
-    left-margin: 5% ;
-    
-
 }
 
+/* Liens dans le menu */
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -47,16 +44,14 @@ nav a:hover {
     color: #090202; /* Changer la couleur au survol */
     background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
     border-radius: 10px; /* Arrondi les bords au survol */
-} 
+}
 
-/* Image de fond */
-.image_back img {
-   width: 100%;
-   height: auto;
-   background-position: center;
-   background-repeat: no-repeat;
-   object-fit: cover; /* Permet de garder l'image aux bonnes dimensions */
-
+/* Images */
+.image_back img, .image_phone img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Permet de garder l'image aux bonnes dimensions */
+}
 
 /* ADAPTATION POUR MOBILE */
 @media (max-width: 899px) {
@@ -76,26 +71,20 @@ nav a:hover {
         gap: 10px; /* Moins d’espace entre les liens */
     }
 
+    /* Cacher l'image pour PC */
     .image_back img {
-        display: none ;
-        width: 100%;
-        height: auto; /* Évite le dépassement */
+        display: none;
     }
 
-
+    /* Afficher l'image mobile */
     .image_phone img {
-        display : block;
-        width: 100%;
-        height: auto;
-}
-
-    .cours h1 {
-        margin-left: 0;
-        text-align: center; /* Centre le texte */
+        display: block;
     }
 }
 
-@media (min-width: 900px)
-.image_phone img {
-    display : none;
+/* Cacher l'image mobile sur PC */
+@media (min-width: 900px) {
+    .image_phone img {
+        display: none;
+    }
 }

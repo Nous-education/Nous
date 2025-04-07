@@ -66,41 +66,36 @@ nav a:hover {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        padding: 20px 10px; /* Réduit l’espace */
+        padding: 20px 10px;
         text-align: center;
     }
 
     .logo img {
-        max-width: 100px; /* Réduction du logo */
+        max-width: 100px;
         margin: auto;
     }
 
     nav ul {
-        flex-direction: column; /* Menu vertical */
-        gap: 10px; /* Moins d’espace entre les liens */
+        flex-direction: column;
+        gap: 10px;
     }
 
     .image_back img {
-        display: none ;
-        width: 100%;
-        height: auto; /* Évite le dépassement */
+        display: none;
     }
-
 
     .image_phone img {
-        display : center;
-        width: 100%;
-        height: auto;
-}
-
-    .cours h1 {
-        margin-left: 0;
-        text-align: center; /* Centre le texte */
+        display: block;
     }
 }
 
-@media (min-width: 800px)
-.image_phone img {
-    display : none;
-}
+/* Version PC */
+@media (min-width: 800px) {
+    .image_phone img {
+        display: none;
+    }
 
+    .image_back img {
+        display: block;
+    }
+}

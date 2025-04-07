@@ -78,7 +78,8 @@ nav a:hover {
 
     /* Afficher l'image mobile */
     .image_phone img {
-        display: block;
+        display: relative;
+        width : 100%;
     }
 }
 

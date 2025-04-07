@@ -1,69 +1,101 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 10px;
+    padding: 10;
 }
 
-/* Header */
+/* Style de l'en-tête */
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 10px;
-    background-color: #00025e;
-    color: white;
+    justify-content: space-between; /* Sépare le logo des liens */
+    align-items: center; /*
+    Aligne les éléments verticalement au centre */
+    padding: 100px 10px; /* Espace autour de l'en-tête */
+    background-color: #00025e; /* Couleur de fond de l'en-tête */
+    color: rgb(32, 22, 226);
+    text-align: center;
     width: 100%;
 }
 
 .logo img {
-    max-width: 50%;
+    max-width: 50%; /* Ajuste la taille du logo sans le déformer */
     height: auto;
     border-radius: 10%;
     margin-left: 40%;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
+    list-style-type: none; /* Retirer les puces */
+    display: flex; /* Alignement des éléments de la liste en ligne */
+    justify-content: center; /* Centre les éléments de la liste */
+    gap: 10rem; /* Espace entre les liens */
     padding: 0;
     margin: 0;
+    text-align: center;
+    left-margin: 5% ;
+    
+
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1rem;
-    padding: 5px 10px;
+    padding: 0.313px 0.625rem;
 }
 
 nav a:hover {
-    color: #090202;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
+    color: #090202; /* Changer la couleur au survol */
+    background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
+    border-radius: 10px; /* Arrondi les bords au survol */
+} 
 
-/* Images */
+/* Image de fond */
 .image_back img {
-    width: 100%;
-    height: auto;
-    display: block; /* Affichée par défaut */
-}
+   width: 100%;
+   height: auto;
+   background-position: center;
+   background-repeat: no-repeat;
+   object-fit: cover; /* Permet de garder l'image aux bonnes dimensions */
 
-.image_phone img {
-    width: 100%;
-    height: auto;
-    display: none; /* Cachée par défaut */
-}
 
-/* Mobile */
-@media (max-width: 900px) {
-    .image_back img {
-        display: none; /* On cache l’image PC */
+/* ADAPTATION POUR MOBILE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 10px; /* Réduit l’espace */
+        text-align: center;
     }
+
+    .logo img {
+        max-width: 100px; /* Réduction du logo */
+        margin: auto;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical */
+        gap: 10px; /* Moins d’espace entre les liens */
+    }
+
+    .image_back img {
+        display: none ;
+        width: 100%;
+        height: auto; /* Évite le dépassement */
+    }
+
 
     .image_phone img {
-        display: block; /* On montre l’image mobile */
+        display : center;
+        width: 100%;
+        height: auto;
+}
+
+    .cours h1 {
+        margin-left: 0;
+        text-align: center; /* Centre le texte */
     }
+}
+
+@media (min-width: 800px)
+.image_phone img {
+    display : none;
 }

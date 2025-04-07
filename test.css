@@ -58,7 +58,7 @@ nav a:hover {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .image_back img {
         display: none; /* On cache l’image PC */
     }

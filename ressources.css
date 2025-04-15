@@ -101,3 +101,19 @@ nav a:hover {
         flex-direction: column; /* Menu vertical */
         gap: 10px; /* Moins d’espace entre les liens */
     }
+    
+    /* Aligner les images en colonne sur mobile */
+    .niveau, .niveau_collège, .niveau_lycée, .astuce {
+        display: flex;
+        flex-direction: column; /* Colonne verticale */
+        align-items: center;
+    }
+
+    .niveau img,
+    .niveau_collège img,
+    .niveau_lycée img,
+    .astuce img {
+        width: 70%;  /* Adapte la taille à l'écran */
+        margin: 1rem 0;
+    }
+}

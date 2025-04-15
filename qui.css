@@ -100,3 +100,29 @@ nav a:hover {
         flex-direction: column; /* Menu vertical */
         gap: 10px; /* Moins d’espace entre les liens */
     }
+    .carousel {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .carousel-images {
+        flex-direction: column;
+        height: calc(100vh * 12); /* 12 images verticalement */
+        width: 100vw;
+        animation: slide-vertical 30s infinite linear;
+    }
+
+    .carousel-images img {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    @keyframes slide-vertical {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(calc(-100vh * 6));
+        }
+    }
+}

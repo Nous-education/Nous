@@ -103,12 +103,12 @@ nav a:hover {
     }
     
     /* Aligner les images en colonne sur mobile */
-    .niveau, .niveau_collège, .niveau_lycée, .astuce {
+    .niveau, .niveau_collège, .niveau_lycée, .astuce .niveau_collège a img{
         display: flex;
         flex-direction: column; /* Colonne verticale */
         align-items: center;
     }
-
+    .niveau_collège a img,
     .niveau img,
     .niveau_collège img,
     .niveau_lycée img,

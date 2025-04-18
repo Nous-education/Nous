@@ -86,42 +86,51 @@ nav a:hover {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        padding: 20px 10px; /* Réduit l’espace */
+        padding: 20px 10px;
         text-align: center;
     }
 
     .logo img {
-        max-width: 100px; /* Réduction du logo */
+        max-width: 100px;
         margin: auto;
     }
 
     nav ul {
-        flex-direction: column; /* Menu vertical */
-        gap: 10px; /* Moins d’espace entre les liens */
+        flex-direction: column;
+        gap: 10px;
     }
+
     .carousel {
         width: 100vw;
-        height: 100vh;
+        height: auto;
     }
 
     .carousel-images {
         flex-direction: column;
-        height: calc(100vh * 12); /* 12 images verticalement */
         width: 100vw;
+        height: auto;
         animation: slide-vertical 30s infinite linear;
     }
 
     .carousel-images img {
         width: 100vw;
-        height: 100vh;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 10px; /* Espace entre les images */
     }
 
+    /* Animation verticale pour mobile */
     @keyframes slide-vertical {
-        from {
+        0% {
             transform: translateY(0);
         }
-        to {
-            transform: translateY(calc(-100vh * 6));
+        100% {
+            transform: translateY(calc(-100%));
         }
     }
+}
+
+/* Supprimer la pause au survol partout */
+.carousel-images:hover {
+    animation-play-state: running;
 }

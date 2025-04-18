@@ -101,7 +101,11 @@ nav a:hover {
         flex-direction: column;
         gap: 10px;
     }
-
+      .niveau, .niveau_collège, .niveau_lycée, .astuce {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     /* Style uniforme pour toutes les images, même celles dans <a> */
     .niveau img,
     .niveau_collège img,

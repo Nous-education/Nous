@@ -100,13 +100,23 @@ nav a:hover {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        padding: 0;
+        margin: 0;
     }
-      .niveau, .niveau_collège, .niveau_lycée, .astuce {
+
+    /* Conteneurs en colonne avec centrage */
+    .niveau,
+    .niveau_collège,
+    .niveau_lycée,
+    .astuce {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        text-align: center;
     }
-    /* Style uniforme pour toutes les images, même celles dans <a> */
+
+    /* Images centrées et uniformes */
     .niveau img,
     .niveau_collège img,
     .niveau_collège a img,
@@ -115,11 +125,11 @@ nav a:hover {
         width: 70%;
         max-width: 300px;
         height: auto;
-        margin: 1rem 0;
+        margin: 1rem auto;
         display: block;
     }
 
-    /* On évite tout débordement du lien */
+    /* Lien contenant l’image bien centré aussi */
     .niveau_collège a {
         display: block;
         width: 100%;

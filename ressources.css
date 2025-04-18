@@ -88,32 +88,40 @@ nav a:hover {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        padding: 20px 10px; /* Réduit l’espace */
+        padding: 20px 10px;
         text-align: center;
     }
 
     .logo img {
-        max-width: 100px; /* Réduction du logo */
+        max-width: 100px;
         margin: auto;
     }
 
     nav ul {
-        flex-direction: column; /* Menu vertical */
-        gap: 10px; /* Moins d’espace entre les liens */
+        flex-direction: column;
+        gap: 10px;
     }
-    
-    /* Aligner les images en colonne sur mobile */
-    .niveau, .niveau_collège, .niveau_lycée, .astuce .niveau_collège a img{
+
+    /* Aligner les blocs en colonne */
+    .niveau,
+    .niveau_collège,
+    .niveau_lycée,
+    .astuce {
         display: flex;
-        flex-direction: column; /* Colonne verticale */
+        flex-direction: column;
         align-items: center;
     }
+
+    /* Redimensionner toutes les images, y compris celles dans des <a> */
+    .niveau_collège img,
     .niveau_collège a img,
     .niveau img,
-    .niveau_collège img,
+    .niveau a img,
     .niveau_lycée img,
-    .astuce img {
-        width: 70%;  /* Adapte la taille à l'écran */
+    .niveau_lycée a img,
+    .astuce img,
+    .astuce a img {
+        width: 70%;
         margin: 1rem 0;
     }
 }

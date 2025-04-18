@@ -104,7 +104,6 @@ nav a:hover {
         margin: 0;
     }
 
-    /* Conteneurs en colonne avec centrage */
     .niveau,
     .niveau_collège,
     .niveau_lycée,
@@ -112,14 +111,11 @@ nav a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         text-align: center;
     }
 
-    /* Images centrées et uniformes */
     .niveau img,
     .niveau_collège img,
-    .niveau_collège a img,
     .niveau_lycée img,
     .astuce img {
         width: 70%;
@@ -129,10 +125,18 @@ nav a:hover {
         display: block;
     }
 
-    /* Lien contenant l’image bien centré aussi */
+    /* Le <a> contenant l’image est aussi centré */
     .niveau_collège a {
-        display: block;
+        display: flex;
+        justify-content: center;
         width: 100%;
-        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .niveau_collège a img {
+        width: 70%;
+        max-width: 300px;
+        height: auto;
+        display: block;
     }
 }

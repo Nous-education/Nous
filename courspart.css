@@ -147,11 +147,18 @@ footer {
         flex-direction: column; /* Menu vertical */
         gap: 10px; /* Moins d’espace entre les liens */
     }
-    .item img{
-    width: 100%;
-    margin: 5% 4.5%;
-    align-items: center;
-    animation: fadeIn 5s ease-in-out;
-    display : column;
+   .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-
+    .item img {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        margin: 1rem 0;
+        animation: fadeIn 2s ease-in-out;
+    }
+}

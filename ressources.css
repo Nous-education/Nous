@@ -102,26 +102,21 @@ nav a:hover {
         gap: 10px;
     }
 
-    /* Aligner les blocs en colonne */
-    .niveau,
-    .niveau_collège,
-    .niveau_lycée,
-    .astuce {
+    /* Centrage et taille uniforme des sections */
+    .niveau, .niveau_collège, .niveau_lycée, .astuce {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    /* Redimensionner toutes les images, y compris celles dans des <a> */
+    .niveau img,
     .niveau_collège img,
     .niveau_collège a img,
-    .niveau img,
-    .niveau a img,
     .niveau_lycée img,
-    .niveau_lycée a img,
-    .astuce img,
-    .astuce a img {
+    .astuce img {
         width: 70%;
+        max-width: 300px;
         margin: 1rem 0;
+        height: auto;
     }
 }

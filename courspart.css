@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -132,4 +129,40 @@ footer {
     to {
         right: 80%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 10px; /* Réduit l’espace */
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 100px; /* Réduction du logo */
+        margin: auto;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical */
+        gap: 10px; /* Moins d’espace entre les liens */
+    }
+   .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .item img {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        margin: 1rem 0;
+        animation: fadeIn 2s ease-in-out;
+    }
+}
+>>>>>>> d2d25dff77d023cf690034298918e44a5faf7745

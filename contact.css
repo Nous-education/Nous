@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,7 +36,7 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
-   
+    left-margin: 5% ;
     
 
 }
@@ -48,39 +52,4 @@ nav a:hover {
     color: #090202; /* Changer la couleur au survol */
     background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
     border-radius: 10px; /* Arrondi les bords au survol */
-}
-nav a:hover {
-    color: #090202; /* Changer la couleur au survol */
-    background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
-    border-radius: 10px; /* Arrondi les bords au survol */
-}
-.carousel {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    margin-top: 10%;
-    
-}
-
-.carousel-images {
-    display: flex;
-    width: calc(100vw * 12); /* 100% par image x 3 */
-    animation: slide 30s infinite linear;
-}
-
-.carousel-images img {
-    width: 100vw;
-    height: 100vh;
-    flex-shrink: 0;
-    object-fit: contain; 
-}
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(calc(-100vw * 6));
-    }
 }

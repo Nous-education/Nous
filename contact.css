@@ -49,3 +49,34 @@ nav a:hover {
     background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
     border-radius: 10px; /* Arrondi les bords au survol */
 }
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 10px; /* Réduit l’espace */
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 100px; /* Réduction du logo */
+        margin: auto;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical */
+        gap: 10px; /* Moins d’espace entre les liens */
+    }
+   .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .item img {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        margin: 1rem 0;
+        animation: fadeIn 2s ease-in-out;
+    }
+}

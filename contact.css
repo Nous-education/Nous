@@ -58,7 +58,7 @@ nav a:hover {
     background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
     border-radius: 10px; /* Arrondi les bords au survol */
 }
-.tarifs img{
+.tarifs {
     width: 40%;
     margin: 5% 4.5%;
     align-items: center;

@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,7 +36,7 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
-    left-margin: 5% ;
+    
     
 
 }
@@ -44,6 +48,11 @@ nav a {
     padding: 0.313px 0.625rem;
 }
 
+nav a:hover {
+    color: #090202; /* Changer la couleur au survol */
+    background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */
+    border-radius: 10px; /* Arrondi les bords au survol */
+}
 nav a:hover {
     color: #090202; /* Changer la couleur au survol */
     background-color: #ffffff; /* Ajoute un fond légèrement gris au survol */

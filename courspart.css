@@ -33,7 +33,7 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
-    left-margin: 5% ;
+   
     
 
 }
@@ -58,6 +58,7 @@ nav a:hover {
         justify-content: center;  /* Centre l'image horizontalement */
         align-items: center;  /* Centre l'image verticalement */
         height: 35rem;  /* Ajuste la hauteur de la bannière selon tes besoins */
+
     }
 .present img {
         object-fit: cover; 
@@ -81,9 +82,10 @@ div h1{
 }
 .item img{
     width: 40%;
-    margin: 5% 4.5%;
+    margin: 6% 4.5%;
     align-items: center;
     animation: fadeIn 5s ease-in-out;
+    
     }
 h1{
     position: absolute;

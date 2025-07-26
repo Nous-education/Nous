@@ -59,7 +59,7 @@ nav a:hover {
     border-radius: 10px; /* Arrondi les bords au survol */
 }
 .tarifs {
-    width: 40%;
+    width: 200%;
     margin: 5% 4.5%;
     align-items: center;
     animation: fadeIn 5s ease-in-out;
